@@ -1,0 +1,46 @@
+.hero {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 1580px;
+        height: 1580px;
+        border-radius: 100%;
+        background-color: #FFF7D2;
+        right: 0;
+        top: 150px;
+        transform: translateX(50%);
+        z-index: 1;
+
+    }
+
+    &__image {
+        position: absolute;
+        right: 0;
+        z-index: 2;
+        top: -170px;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 3;
+
+        h1 {
+            margin-bottom: 40px;
+            max-width: 1060px;
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: 600;
+            max-width: 760px;
+            margin-bottom: 60px;
+        }
+
+        a {
+            font-size: 28px;
+            font-weight: 700;
+        }
+    }
+}
