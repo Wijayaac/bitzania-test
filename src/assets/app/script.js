@@ -7,7 +7,6 @@ class SalAnimation {
   init() {
     sal({
       threshold: 0.2,
-      once: false,
     });
   }
 }
