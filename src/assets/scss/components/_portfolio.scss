@@ -1,0 +1,106 @@
+.portfolio {
+    position: relative;
+    z-index: 2;
+
+    &__header {
+        position: relative;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+
+    &__ornament {
+        position: absolute;
+        z-index: 2;
+
+        &--left {
+            top: -60px;
+            left: 90px;
+        }
+
+        &--right {
+            bottom: 40px;
+            right: 180px;
+        }
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__card {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 45px;
+        background-color: #FCF9F0;
+        box-shadow: 15px 15px 20px #F4EED6, inset 15px 270px 40px #fffdf8;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    &__image {
+        position: relative;
+        text-align: center;
+
+        .image-wrapper {
+            padding-top: 100%;
+            overflow: hidden;
+            border-radius: 40px;
+            box-shadow: 4px 4px 4px #E7DFB7;
+        }
+
+        span {
+            position: relative;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            background-color: $primary;
+            transform: translateY(-30%);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__client {
+        margin-top: 80px;
+
+        .row {
+            align-items: center;
+            justify-content: center;
+
+            margin-left: -10px;
+            margin-right: -10px;
+
+            &:first-child {
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-bottom: 25px;
+            }
+
+            .col {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+
+    &__logo {
+        position: relative;
+
+        img {
+            object-fit: cover;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.footer {
+    background-color: #ffd350;
+    position: relative;
+    z-index: 3;
+
+    &__wrapper {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        .row {
+            align-items: center;
+        }
+    }
+
+    &__address {
+        font-weight: 700;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    &__icon {
+        li {
+            display: flex;
+            align-items: flex-start;
+            font-weight: 700;
+            font-size: 16px;
+
+            img {
+                margin-top: 2px;
+                width: 24px;
+                height: auto;
+                object-fit: contain;
+                margin-right: 10px;
+            }
+
+            p {
+                font-weight: 600;
+            }
+        }
+    }
+}

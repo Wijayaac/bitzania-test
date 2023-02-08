@@ -91,7 +91,7 @@ button,
   text-align: center;
   line-height: 1;
   will-change: transform, border-color, background-color, color;
-  padding: 14px 20px;
+  padding: 0.5em 1em;
   position: relative;
 
   &:active,
@@ -118,4 +118,14 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+/*
+    11. List style
+  */
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }

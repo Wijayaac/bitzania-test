@@ -1,19 +1,18 @@
 .hero {
     position: relative;
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     width: 1580px;
+    //     height: 1580px;
+    //     border-radius: 100%;
+    //     background-color: #FFF7D2;
+    //     right: 0;
+    //     top: 150px;
+    //     transform: translateX(50%);
+    //     z-index: 1;
 
-    &::after {
-        content: "";
-        position: absolute;
-        width: 1580px;
-        height: 1580px;
-        border-radius: 100%;
-        background-color: #FFF7D2;
-        right: 0;
-        top: 150px;
-        transform: translateX(50%);
-        z-index: 1;
-
-    }
+    // }
 
     &__image {
         position: absolute;

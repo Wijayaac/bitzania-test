@@ -15,7 +15,13 @@
 
 // Components
 @import 'components/header';
+@import 'components/footer';
 @import 'components/hero';
+@import 'components/cta';
+@import 'components/service';
+@import 'components/proof';
+@import 'components/media';
+@import 'components/portfolio';
 
 .sr-only {
     border: 0;
@@ -46,56 +52,29 @@
     }
 }
 
-.btn-arrow {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    color: $dark-green;
-    padding-left: 0;
-    text-align: left;
-
-    &::after {
-        content: "\e90b";
-        position: absolute;
-        right: 0;
-        color: $primary;
-        font-weight: 700;
-        font-size: 14px;
-        font-family: 'icomoon' !important;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-}
-
-.subheading {
-    font-size: 18px;
-
-    @include mq($from: lg) {
-        font-size: 22px;
-    }
-
-}
-
-.subtitle {
-    font-size: 14px;
-    color: $grey;
-    margin-bottom: 4px;
-    text-transform: uppercase;
-
-    @include mq($until: lg) {
-        font-size: 12px;
-    }
-}
-
 h1,
 h2,
-h3 {
-    font-weight: 700;
+h3,
+h4 {
+    font-weight: 900;
+}
+
+// Typography
+h1 {
+    font-size: 38px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    // margin-bottom: 15px;
+
+    @include mq($from: md) {
+        font-size: 48px;
+        // margin-bottom: 24px;
+    }
+
+    @include mq($from: xl) {
+        font-size: 78px;
+        // margin-bottom: 40px;
+    }
 
     span {
         color: $black;
@@ -124,24 +103,6 @@ h3 {
     }
 }
 
-// Typography
-h1 {
-    font-size: 38px;
-    line-height: 1.4;
-    letter-spacing: -0.01em;
-    // margin-bottom: 15px;
-
-    @include mq($from: md) {
-        font-size: 48px;
-        // margin-bottom: 24px;
-    }
-
-    @include mq($from: xl) {
-        font-size: 78px;
-        // margin-bottom: 40px;
-    }
-}
-
 h2 {
     font-size: 24px;
     line-height: 1.2;
@@ -152,7 +113,7 @@ h2 {
     }
 
     @include mq($from: xl) {
-        font-size: 38px;
+        font-size: 62px;
     }
 }
 
@@ -164,7 +125,20 @@ h3 {
     }
 
     @include mq($from: xl) {
-        font-size: 26px;
+        font-size: 32px;
+        line-height: 1.2
+    }
+}
+
+h4 {
+    font-size: 18px;
+
+    @include mq($from: md) {
+        font-size: 20px;
+    }
+
+    @include mq($from: xl) {
+        font-size: 22px;
     }
 }
 
@@ -183,8 +157,8 @@ body {
 }
 
 .section {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 100px;
+    padding-top: 100px;
 
     &--tight {
         padding-top: 0;
