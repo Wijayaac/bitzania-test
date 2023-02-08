@@ -17,6 +17,11 @@
         transform: translateX(50%);
         z-index: 1;
 
+        @include mq($until: 1440px, $and: false, $from: lg) {
+            width: 1200px;
+            height: 1200px;
+        }
+
         @include mq($until: lg) {
             width: 400px;
             height: 400px;
@@ -29,6 +34,10 @@
         right: 0;
         z-index: 2;
         top: -170px;
+
+        @include mq($until: 1440px, $and: false, $from: lg) {
+            max-width: 720px;
+        }
 
         @include mq($until: lg) {
             top: 0;
@@ -55,6 +64,23 @@
         a {
             font-size: 28px;
             font-weight: 700;
+        }
+
+        @include mq($until: 1440px, $and: false, $from: lg) {
+            h1 {
+                max-width: 900px;
+                font-size: 60px;
+            }
+
+            p {
+                font-size: 28px;
+                max-width: 650px;
+                margin-bottom: 60px;
+            }
+
+            a {
+                font-size: 24px;
+            }
         }
 
         @include mq($until: lg) {

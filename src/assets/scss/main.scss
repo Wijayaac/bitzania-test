@@ -37,10 +37,10 @@
 }
 
 .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 
-    @include mq($from: 1440px) {
+    @include mq($from: 1560px) {
         padding-left: 140px;
         padding-right: 140px;
         max-width: 1920px;
@@ -64,16 +64,13 @@ h1 {
     font-size: 24px;
     line-height: 1.4;
     letter-spacing: -0.01em;
-    // margin-bottom: 15px;
 
     @include mq($from: md) {
         font-size: 48px;
-        // margin-bottom: 24px;
     }
 
     @include mq($from: xl) {
         font-size: 78px;
-        // margin-bottom: 40px;
     }
 
     span {
@@ -135,10 +132,6 @@ h4 {
 
     @include mq($from: md) {
         font-size: 20px;
-    }
-
-    @include mq($from: xl) {
-        font-size: 22px;
     }
 }
 

@@ -12,9 +12,23 @@
         align-items: flex-start
     }
 
+    @include mq($until: lg, $and: false, $from: md) {
+        text-align: center;
+    }
+
     &__image {
         position: absolute;
         bottom: 0;
+
+        @include mq($until: 1500px, $and: false, $from: lg) {
+            max-width: 800px;
+        }
+
+        @include mq($until: lg, $and: false, $from: 420px) {
+            max-width: 620px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 
     &__wrapper {
@@ -43,6 +57,12 @@
         a {
             font-size: 30px;
             font-weight: 900;
+        }
+
+        @include mq($until: 1500px, $and: false, $from: lg) {
+            h2 {
+                font-size: 72px;
+            }
         }
 
         @include mq($until: lg) {

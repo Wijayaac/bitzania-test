@@ -68,7 +68,7 @@
             }
         }
 
-        @include mq($until: lg) {
+        @include mq($until: md) {
             h3 {
                 font-size: 22px;
             }
