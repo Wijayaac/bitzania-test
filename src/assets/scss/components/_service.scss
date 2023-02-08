@@ -2,6 +2,10 @@
     position: relative;
     z-index: 3;
 
+    @include mq($until: lg) {
+        overflow: hidden;
+    }
+
     &__header {
         text-align: center;
         margin-bottom: 60px;
@@ -42,6 +46,18 @@
         img {
             object-fit: contain;
         }
+
+        @include mq($until: lg) {
+            &--top {
+                right: 30px;
+                max-width: 90px;
+            }
+
+            &--right {
+                top: 30px;
+                max-width: 80px;
+            }
+        }
     }
 
     &__card {
@@ -78,6 +94,25 @@
 
             &:not(:last-child) {
                 margin-bottom: 40px;
+            }
+        }
+
+        @include mq($until: lg) {
+            padding: 30px;
+            height: auto;
+            margin-bottom: 24px;
+
+            h3 {
+                margin-bottom: 24px;
+                max-width: 38vw;
+            }
+
+            h4 {
+                margin-bottom: 12px;
+            }
+
+            p {
+                font-size: 16px;
             }
         }
     }

@@ -10,6 +10,11 @@
         .row {
             align-items: center;
         }
+
+        @include mq($until: lg) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
     }
 
     &__address {
@@ -17,6 +22,14 @@
 
         p {
             font-size: 18px;
+        }
+
+        @include mq($until: lg) {
+            margin-bottom: 12px;
+
+            p {
+                font-size: 16px;
+            }
         }
     }
 
@@ -37,6 +50,13 @@
 
             p {
                 font-weight: 600;
+            }
+
+        }
+
+        @include mq($until: lg) {
+            li {
+                font-size: 14px;
             }
         }
     }

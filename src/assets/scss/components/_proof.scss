@@ -13,6 +13,15 @@
             font-size: 68px;
             text-shadow: 10px 5px 10px #FAAE3C;
         }
+
+        @include mq($until: lg) {
+            margin-bottom: 24px;
+
+            h2 {
+                margin-bottom: 0;
+                font-size: 32px;
+            }
+        }
     }
 
     &__body {
@@ -59,12 +68,21 @@
             }
         }
 
+        @include mq($until: lg) {
+            h3 {
+                font-size: 22px;
+            }
 
+            &-title {
+                max-width: 60vw;
+                transform: translateY(-70%);
+
+                &--highlight {
+                    h3 {
+                        transform: translateY(30%);
+                    }
+                }
+            }
+        }
     }
-
-    &__image {
-        // position: absolute;
-
-    }
-
 }

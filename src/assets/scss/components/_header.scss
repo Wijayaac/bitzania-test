@@ -1,3 +1,17 @@
 .header {
-    padding-top: 140px
+    padding-top: 140px;
+
+    &__logo {
+        img {
+            object-fit: contain;
+        }
+    }
+
+    @include mq($until: lg) {
+        padding-top: 20px;
+
+        &__logo {
+            max-width: 120px;
+        }
+    }
 }

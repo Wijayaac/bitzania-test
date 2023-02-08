@@ -7,13 +7,17 @@
     z-index: 3;
     min-height: 920px;
 
+    @include mq($until: lg) {
+        min-height: 620px;
+        align-items: flex-start
+    }
+
     &__image {
         position: absolute;
         bottom: 0;
     }
 
     &__wrapper {
-
         .row {
             align-items: center;
         }
@@ -41,5 +45,15 @@
             font-weight: 900;
         }
 
+        @include mq($until: lg) {
+            h2 {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
     }
 }

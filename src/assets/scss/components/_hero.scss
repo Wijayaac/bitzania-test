@@ -1,24 +1,39 @@
 .hero {
     position: relative;
-    // &::after {
-    //     content: "";
-    //     position: absolute;
-    //     width: 1580px;
-    //     height: 1580px;
-    //     border-radius: 100%;
-    //     background-color: #FFF7D2;
-    //     right: 0;
-    //     top: 150px;
-    //     transform: translateX(50%);
-    //     z-index: 1;
 
-    // }
+    @include mq($until: lg) {
+        overflow: hidden;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 1580px;
+        height: 1580px;
+        border-radius: 100%;
+        background-color: #FFF7D2;
+        right: 0;
+        top: 150px;
+        transform: translateX(50%);
+        z-index: 1;
+
+        @include mq($until: lg) {
+            width: 400px;
+            height: 400px;
+            top: 0;
+        }
+    }
 
     &__image {
         position: absolute;
         right: 0;
         z-index: 2;
         top: -170px;
+
+        @include mq($until: lg) {
+            top: 0;
+            max-width: 250px;
+        }
     }
 
     &__content {
@@ -40,6 +55,24 @@
         a {
             font-size: 28px;
             font-weight: 700;
+        }
+
+        @include mq($until: lg) {
+            margin-top: 200px;
+
+            h1 {
+                margin-bottom: 24px;
+            }
+
+            p {
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+
         }
     }
 }
